@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclerViewPage"
+    tools:ignore="MissingConstraints">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        tools:listitem="@layout/note_item_view" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="65dp"
+        android:backgroundTint="#FFC107"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#0C0C0C" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="40dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="circle.json"
+        app:lottie_loop="true" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

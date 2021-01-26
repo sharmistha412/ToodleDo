@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firebaselogin.basicapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/to_do_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BasicApplication">
+        <activity android:name=".RecyclerViewPage"
+            ></activity>
+        <activity android:name=".Add_Edit_note"
+            android:parentActivityName=".RecyclerViewPage"/>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

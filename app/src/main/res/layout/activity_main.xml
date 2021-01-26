@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation1"
+        android:layout_width="407dp"
+        android:layout_height="337dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="men.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:layout_width="225dp"
+        android:layout_height="61dp"
+        android:layout_above="@+id/btn_notes"
+        android:layout_below="@id/animation1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tap below to get your Note"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_notes"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="123dp"
+        android:layout_marginBottom="142dp"
+        android:backgroundTint="#FFC107"
+        android:text="Note"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
